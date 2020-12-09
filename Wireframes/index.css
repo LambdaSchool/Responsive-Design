@@ -1,0 +1,137 @@
+/*css*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*end of reset*/
+
+html {box-sizing: border-box}
+
+body{ background:lightgray;
+	
+}
+header {display:flex;
+	justify-content: center;
+	padding:2%;
+}
+h1 {font-size:2.5rem;
+}
+nav a {display:flex;
+flex-flow: column nowrap;
+padding: 0.5rem;
+text-decoration:none;
+color:black;
+border:1px solid black;
+margin-top: 1rem;
+margin-bottom: 2rem;
+margin-left: 48%;
+margin-right: 48%;
+justify-content:center;
+background:white;
+}
+
+section.image-text img {display:flex;
+ margin-right: auto;
+ margin-left: auto;
+padding-bottom: 1rem;
+}
+h2 {display:flex;
+justify-content: center;
+font-size:2rem;
+}
+button.projects-button{
+	padding: 0.5rem;
+	display:flex;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+section.image-text p { display: flex;
+	justify-content: center;
+	line-height: 1.5;
+	margin: 1rem;
+}
+
+/*Image columns*/
+.image-container { display:flex;
+	flex-flow: row wrap;
+	max-width:600px; 
+	max-height:800px;
+	margin:auto;
+}
+/*800px breakpoint*/
+@media screen and (max-width:800px){
+	.image-container { width: 50%;}
+}
+
+
+/*500px breakpoint*/
+@media screen and (max-width:500px){
+	.image-container { width:100%;}
+}
+section.image-container img {display:flex;
+	margin-left: auto;
+	margin-right: auto;
+	padding:1rem;
+}
+
+footer { background:black;
+	color:white;
+	padding:5rem;
+}
+h3 {font-size:2rem;
+	display: flex;
+	justify-content: center;
+	margin-bottom:2rem;
+}
+button.contact-button {display:flex;
+	padding:.5rem;
+	font-size: 1.25rem;
+	margin-left:auto;
+	margin-right: auto;
+}
