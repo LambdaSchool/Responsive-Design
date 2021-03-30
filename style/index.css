@@ -1,0 +1,596 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------------------------------------- */
+
+/* Use the checklist below to guide your work today. Your final product should be presentable at mobile, tablet and a desktop-width. */
+
+/* - [ ] Insert a viewport meta tag into the head of the project with these html attributes: content="width=device-width, initial-scale=1" */
+/* - [ ] Introduce max-width media queries into your project at 800px and 500px */
+/* - [ ] Add accessability features to your webpage */
+/* - [ ] Design should closely follow the [mobile wireframe](Wireframes/) given for your chosen layout */
+
+/* @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+} */
+
+/* Add CSS styling here */
+.upper-container{
+  background-color: gray;
+}
+
+
+
+
+
+nav {
+  /* display: flex; 
+  justify-content: space-between;   */
+  width:40%;
+  margin-bottom: 1rem;
+  display:flex;
+  justify-content: flex-start;
+}
+
+nav a {
+  /* padding: .1rem; */
+  /* width: 4.5rem; */
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  border: 2px solid black;
+  background-color: darkgrey;
+  color: white;
+  box-sizing:content-box;
+  width: 20%;
+  padding: .5rem;
+  border-radius: 1rem;
+  
+  
+}
+
+.home-button{
+background: black;
+color: white;
+}
+
+.name{
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.upper{
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  margin-top: 3rem;
+  height: auto;
+  width: 100%;
+}
+
+.upper img{
+  height: 100%;
+  width: 30rem;
+}
+
+.about-me{
+  width: 50%;
+}
+
+.about-me p{
+  margin-bottom: 5.6rem;
+  background-color: grey;
+  border-radius: 1rem;
+  color: white;
+}
+
+.middle-boxes {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+
+}
+
+.middle-boxes img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    margin: 2rem;
+    /* max-width: 50%;
+     */
+     height: 20rem;
+     width: 20rem;
+      }
+
+.projects a{
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  border: 2px solid black;
+  background-color: darkgrey;
+  color: white;
+  width: 20%;
+  padding: .5rem;
+  border-radius: 1rem;
+  
+}
+
+h1{
+  margin-bottom: 2rem;
+}
+.projects{
+  margin-bottom: 2rem;
+}
+
+
+.footer-button{
+  text-align: center;
+  margin-top: 3rem;
+  background-color: lightgray;
+  padding-bottom: 1rem;
+}
+
+.footer-button a{
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border: 2px solid black;
+  background-color: darkgrey;
+  color: white;
+  padding: .5rem;
+  border-radius: 1rem;
+  
+}
+
+.footer-button p{
+  margin-bottom: 3rem;
+}
+
+.parent {
+  color: black;
+  font-size: 12px;
+  border: 1px solid black;
+  padding: 20px;
+}
+.child {
+  color: red;
+  font-size: 16px;
+  margin: 20px;
+}
+.grandchild {
+  width: 400px;
+  height: 100px;
+  background: gray;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 500px){
+ 
+  .upper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .upper-container{
+    background-color: none;
+    background: none;
+  }
+
+  .about-me{
+    display:flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .about-me p{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .name{
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-me h1{
+    text-align: center;
+    width: 100vw;
+    padding-top: 2rem;
+  }
+
+  .upper-container{
+    background-color: none;
+    background: none;
+  }
+
+   .projects{
+    display: flex;
+    justify-content: center;
+  } 
+
+  .middle-boxes{
+    display: flex;
+    justify-content: center;
+  }
+
+  .middle-boxes img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    /* max-width: 50%;
+     */
+     height: 20rem;
+     width: 20rem;
+      }
+
+      /* .projects{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+      } */
+
+  .projects a{
+    opacity: .4;
+    font-weight: 1000;
+    background-color: black;
+  }
+
+  .text p{
+    background-color: black;
+    /* background: none; */
+    /* color: white;
+    font-size: 2rem;
+    text-align: center;
+    opacity: .1; */
+    font-weight: 100;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    
+  }
+
+  .text {
+    border-radius: 3rem;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    opacity: .5;
+    color: white;
+    padding: 3rem;
+      }
+
+  body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  nav{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+
+  nav a{
+    font-size: 1rem;
+    border: 2px solid black;
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: black;
+    text-shadow: grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+
+  footer{
+    background-color: black;
+    opacity: .6;
+    
+  }
+
+  .footer-button{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+
+  }
+  .footer-button a{
+    font-size: 1.5rem;
+    border: 2px solid grey;
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: black;
+    text-shadow: grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+  }
+  
+}
+
+@media (max-width: 800px)
+{
+
+  header {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav{
+    display:flex;
+    border-color: none;
+    justify-content: space-around;
+    flex-direction: column;
+    align-self: center;
+    width: 50%;
+    background: none;
+    opacity: .6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+
+  nav a{
+    font-size: 1rem;
+    border: 2px solid grey;
+    width: auto;
+    background-color: black;
+    text-shadow: grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+
+  .upper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-me{
+    display:flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .about-me p{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .middle-boxes {
+    display:flex;
+    justify-content: center;
+  }
+
+  .name{
+    text-align: center;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  .text p{
+    background-color: black;
+    /* background: none; */
+    /* color: white;
+    font-size: 2rem;
+    text-align: center;
+    opacity: .1; */
+    font-weight: 100;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    
+  }
+
+  .text {
+    border-radius: 3rem;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    opacity: .5;
+    color: white;
+    padding: 3rem;
+      }
+
+  body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .upper-container{
+    background-color: none;
+    background: none;
+  }
+
+  .projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .projects a{
+    width: 50%;
+    opacity: .4;
+    font-weight: 1000;
+    background-color: black;
+  }
+
+  .middle-boxes img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    margin: 2rem;
+    /* max-width: 50%;
+     */
+     height: 20rem;
+     width: 20rem;
+      }
+      footer{
+        background-color: black;
+        opacity: .6;
+        
+      }
+    
+      .footer-button{
+        background-color: black;
+        color: white;
+        font-size: 2rem;
+    
+      }
+      .footer-button a{
+        font-size: 1.5rem;
+        border: 2px solid grey;
+        width: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        background-color: black;
+        text-shadow: grey;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+      }
+
+}
