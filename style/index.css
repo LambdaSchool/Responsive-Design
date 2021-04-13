@@ -1,0 +1,301 @@
+/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.6rem;
+    line-height:1.5;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1{
+    font-family: 'Chelsea Market', cursive;
+    font-size:5.5rem;
+	margin-top: 10%;
+}
+section{
+    padding:4% 0;
+}/*header section styles*/
+nav{
+    padding:2% 0;
+}
+nav a{
+    display:inline-block;
+    padding:1% 0;
+	width: 15%;
+    text-align:center;
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+	border: 1px solid black;
+}
+
+nav a:hover {
+	background-color: black;
+	color: white;
+	box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+header {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	width: 100%;
+	flex-wrap: nowrap;
+}
+ 
+.projects-flex {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+
+.profile-picture img {
+	width: 100%;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.contact-flex {
+	display:flex;
+	flex-flow: column wrap;
+}
+
+.contact-form {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.header-flex {
+	width: 100%;
+}
+
+.project-description {
+	background-color: rgb(216, 111, 111);
+	display: flex;
+	width: 60%;
+	margin-right: 2%;
+	justify-content: center;
+	align-items: center;
+	line-height: 2;
+	font-size: large;
+}
+
+
+.submit-button {
+	width: 200px;
+	font-size: x-large;
+	background-color: rgb(182, 83, 83);
+	color: white;
+}
+
+.submit-button:hover {
+	cursor: pointer;
+}
+
+.form-flex {	
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.project h3 {
+	font-weight: bold;
+}
+
+/* 
+	https://www.w3schools.com/cssref/playit.asp?filename=playcss_box-shadow&preval=20px%2020px%2050px%2015px%20grey
+*/
+
+
+/*Reponsive Styles*/
+/*Break points*/
+/*
+    max-width scales down, this is for desktop first design
+    min-width scales up, this is for mobile first design
+*/
+/*tablet*/
+@media(max-width: 800px) {
+      nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav a {
+	  width: 50%;
+  }
+
+  .links {
+      width: 100%;
+  }
+
+  .logo {
+      width: 100%;
+  }
+
+  #home button {
+      display: none;
+  }
+
+  #about {
+      background-image: none;
+      background-color: #e2e3e5;
+      justify-content: center;
+  }
+
+  #about div {
+    margin-right: 0;
+    width: 80%;
+  }
+
+  .mobileSpecific {
+    flex-direction: column-reverse;
+  }
+
+  .shopText div {
+      width: 100%;
+  }
+
+  #contact h3 {
+      color: #FBFFFB
+  }
+
+  #contact h3 {
+      color: #FBFFFB
+  }
+
+  #contact h3 {
+      color: #FBFFFB
+  }
+
+  .logo img {
+      width: 15%;
+  }
+
+  .projects-flex {
+	  flex-flow: row wrap;
+	  width: 100%;
+	  align-items: flex-start;
+  }
+
+  .projects-flex img {
+	  width: 30%;
+  }
+
+  .project {
+	  width: 50%;
+	  display: flex;
+	  flex-flow: column wrap;
+	  padding: 10% 0;
+	  background-color: rgba(30,129,176, 0.0);
+  }
+
+  .project p {
+	  width: 80%;
+  }
+
+ .project p:last-child {
+	margin-bottom: 30%;
+	}
+
+}
+
+@media(max-width: 500px) {
+	.header-flex p {
+		width:  60%;
+	}
+
+	.header-flex {
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+	}
+}
+
+@media(min-width: 801px) {
+	.project img {
+		width: 40%;
+		justify-content: center;
+	}
+
+	.project  {
+		width: 20%;
+
+	}
+
+	.project:hover {
+		color: white;
+		background-color: black;
+		z-index: 1000;
+	}
+
+	.project img:hover {
+		z-index: -1;
+	}
+
+	.project:first-child {
+		margin-left: 4%;
+	}
+
+}

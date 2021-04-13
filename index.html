@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css"/>
+    <title>Kirk Lincoln's Profile Site</title>
+    <script>
+        const submit = () => { location.href = "./contact.html" }
+
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-flex">
+            <h1>Kirk Lincoln</h1>
+            <nav class="menu">
+                <a href="./index.html" class="nav-anchor-index">Home</a>
+                <a href="./about.html" class="nav-anchor-about">About</a>
+                <a href="./projects.html" class="nav-anchor-projects">Projects</a>
+                <a href="./contact.html" class="nav-anchor-contact">Contact</a>
+            </nav>
+            <h2>Welcome to My Site!</h2>
+            <p>Thanks for stopping by, if you like my work, please reach out with any inquiries today.</p>
+        </div>
+    </header>
+    <section>
+        <article>
+            <p class="profile-picture"><img src="../assets/johannes-plenio-qkfxBc2NQ18-unsplash.jpg" alt="sunset mountains" /></p>
+        </article>
+    </section>
+    <section>
+
+    </section>
+    <section>
+        <div class="projects-flex">
+            <div class="project">
+                <a target="_blank" href="https://github.com/KirkLincoln/iTissues"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github logo" /></a>
+                <h3>iTissues</h3>
+                <p>Ticket tracker built with React and Redux</p>
+            </div>
+            <div class="project">
+                <a target="_blank" href=""><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github logo" />
+                <h3>Project 2</h3>
+                    <p>Amazing</p>
+            </div>
+            <div class="project">
+                <a target="_blank" href="https://github.com/phos-tou-kosmou/python_portfolio/tree/python/web_portfolio"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github logo" /></a>
+                <h3>Twilio Soft Phone</h3>
+                <p>Front and back end of a soft-phone made with React and Flask</p>
+            </div>
+            <div class="project">
+                <a target="_blank" href="https://github.com/phos-tou-kosmou/python_portfolio/blob/python/linear_algebra/transposition.py"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github logo" /></a>
+                <h3>Linear Algebra Transpositions</h3>
+                <p> <span class="shadow"> Linear algebra library (Needs Optimization)</span></p>
+            </div>
+            <div class="project-description">
+                    <p>
+                        Favorite languages: Golang, Javascript, Python<br>
+                        Frameworks: React, Redux, Bootstrap<br>
+                        Systems: Linux (intermediate), Docker, CI/CD
+                    </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <footer>
+            <button class="submit-button" onclick="submit()">Contact Me</button>
+        </footer>
+    </section>
+</body>
+</html>
